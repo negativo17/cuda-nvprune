@@ -22,7 +22,8 @@ Source2:        https://developer.download.nvidia.com/compute/cuda/redist/%{real
 Conflicts:      %{name}-%{major_package_version} < %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description
-nvprune prunes host object files and libraries to only contain device code for the specified targets.
+nvprune prunes host object files and libraries to only contain device code for
+the specified targets.
 
 %prep
 %ifarch x86_64
