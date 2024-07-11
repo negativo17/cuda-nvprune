@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        12.4.99
+Version:        12.5.82
 Release:        1%{?dist}
 Summary:        CUDA nvprune
 License:        CUDA Toolkit
@@ -41,6 +41,9 @@ install -m 0755 -p -D bin/nvprune %{buildroot}%{_bindir}/nvprune
 %{_bindir}/nvprune
 
 %changelog
+* Thu Jul 11 2024 Simone Caronni <negativo17@gmail.com> - 1:12.5.82-1
+- Update to 12.5.82.
+
 * Tue Mar 12 2024 Simone Caronni <negativo17@gmail.com> - 1:12.4.99-1
 - Update to 12.4.99.
 - Drop ppc64le.
