@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        13.3.29
+Version:        13.4.49
 Release:        1%{?dist}
 Summary:        CUDA nvprune
 License:        CUDA Toolkit
@@ -41,6 +41,9 @@ install -m 0755 -p -D bin/nvprune %{buildroot}%{_bindir}/nvprune
 %{_bindir}/nvprune
 
 %changelog
+* Tue Sep 29 2026 Simone Caronni <negativo17@gmail.com> - 1:13.4.49-1
+- Update to 13.4.49.
+
 * Wed Jul 22 2026 Simone Caronni <negativo17@gmail.com> - 1:13.3.29-1
 - Update to 13.3.29.
 
